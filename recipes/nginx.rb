@@ -2,11 +2,11 @@ package 'nginx' do
   action :install
 end
 
-remote_file "/etc/nginx/nginx.conf" do
+settings "/etc/nginx/nginx.conf" do
   source "../remote_files/nginx.conf"
 end
 
-remote_file "/etc/nginx/conf.d/app.conf" do
+settings "/etc/nginx/conf.d/app.conf" do
   source "../remote_files/app.conf"
 end
 

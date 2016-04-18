@@ -13,8 +13,8 @@ git RBENV_DIR do
   repository "git://github.com/sstephenson/rbenv.git"
 end
 
-remote_file RBENV_SCRIPT do
-  source "remote_files/rbenv.sh"
+settings RBENV_SCRIPT do
+  source "settings/rbenv.sh"
 end
 
 execute "set owner and mode for #{RBENV_SCRIPT} " do

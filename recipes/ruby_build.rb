@@ -13,7 +13,7 @@ git RBENV_DIR do
   repository "git://github.com/sstephenson/rbenv.git"
 end
 
-settings RBENV_SCRIPT do
+remote_file RBENV_SCRIPT do
   source "settings/rbenv.sh"
 end
 

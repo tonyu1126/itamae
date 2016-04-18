@@ -3,11 +3,11 @@ package 'nginx' do
 end
 
 settings "/etc/nginx/nginx.conf" do
-  source "../remote_files/nginx.conf"
+  source "../settings/nginx.conf"
 end
 
 settings "/etc/nginx/conf.d/app.conf" do
-  source "../remote_files/app.conf"
+  source "../settings/app.conf"
 end
 
 service 'nginx' do
